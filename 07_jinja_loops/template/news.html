@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% set page = 'news' %}
+
+{% block content %}
+<div class="container bs-docs-container">
+  <h1>News</h1>
+  <div class="row">
+    {% for onenews in news %}
+      {%- if loop.index <= 12 %}{{ onenews }}{% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
+
+

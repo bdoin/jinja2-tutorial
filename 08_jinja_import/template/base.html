@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link href="js/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/platform.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+	<a href="index.html"><img  src="logo.png"/></a>
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+	<ul class="nav navbar-nav">
+	  <li class="{% if page == 'index' %}active{% else %}non-active{% endif %}"><a href="index.html">Toulibre</a></li>
+	  <li class="{% if page == 'news' %}active{% else %}non-active{% endif %}"><a href="news.html">News</a></li>
+	</ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    <hr/>
+    {{ license_info }}
+  </body>
+</html>
+

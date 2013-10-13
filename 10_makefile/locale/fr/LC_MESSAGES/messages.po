@@ -1,0 +1,31 @@
+# French translations for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-10-11 00:57+0200\n"
+"PO-Revision-Date: 2013-10-04 15:36+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: site.py:32
+msgid "This site is released under the GNU General Public License"
+msgstr "Ce site est soumis à la licence GNU GPL"
+
+#: site.py:33
+msgid "Toulibre rulez"
+msgstr "Toulibre c'est vraiment chouette"
+
+#: template/index.html:4
+msgid "Here is why Toulibre rocks"
+msgstr "Voici pourquoi Toulibre est une super association ..."
+

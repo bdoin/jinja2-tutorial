@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set page = 'news' %}
+
+{% block content %}
+<p><a href='http://jinja.pocoo.org/docs/templates/#import'>Import</a></p>
+
+<p>Jinja2 supports putting often used code into macros. These macros
+can go into different templates and get imported from there. This
+works similar to the import statements in Python. It's important to
+know that imports are cached and imported templates don't have access
+to the current template variables, just the globals by default. For
+more details about context behavior of imports and includes see Import
+Context Behavior.
+</p>
+
+<pre>
+&#123;% import 'social.html' as social %&#125;
+&#123;&#123; social.block() &#125;&#125;
+</pre>
+
+<p></p>
+
+<div class="container bs-docs-container">
+  <h1>News</h1>
+  <div class="row">
+    {% for onenews in news %}
+      {%- if loop.index <= 12 %}{{ onenews }}{% endif %}
+    {% endfor %}
+  </div>
+</div>
+<hr/>
+<p><a class="btn btn-default" href="http://getbootstrap.com/components/#glyphicons-glyphs">Warning, the glyphicons are non free &raquo;</a></p>
+
+{% endblock %}
+
+
