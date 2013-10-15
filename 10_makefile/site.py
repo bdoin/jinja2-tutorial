@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 import jinja2
-from jinja2 import Template
 import gettext
 import sys
 import codecs

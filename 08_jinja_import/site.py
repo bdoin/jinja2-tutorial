@@ -2,8 +2,6 @@
 
 import jinja2
 
-from jinja2 import Template
-
 templateLoader = jinja2.FileSystemLoader( searchpath="template" )
 templateEnv = jinja2.Environment( loader=templateLoader )
 
